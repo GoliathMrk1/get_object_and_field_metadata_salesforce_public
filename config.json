@@ -1,0 +1,203 @@
+{
+    "run_type": "real",
+    "field_properties_file_name": "field_properties",
+    "field_picklist_values_file_name": "picklist_values",
+    "field_record_type_ids_file_name": "record_types_ids",
+    "logging": {
+        "console_level": "INFO",
+        "file_level": "DEBUG",
+        "log_file_path": "path/to/log/file.log",
+        "create_log_file": false
+    },
+    "orgs": {
+        "test_org": {
+            "test1": {
+                "user_name": "test1",
+                "user_password": "test1",
+                "user_token": "test1",
+                "domain": "login",
+                "timeout": 30
+            },
+            "test2": {
+                "user_name": "test2",
+                "user_password": "test2",
+                "user_token": "test2",
+                "domain": "test",
+                "timeout": 30
+            }
+        },
+        "real_orgs":{
+            "org1":  {
+                "user_name": "org1",
+                "user_password": "org1",
+                "user_token": "org1",
+                "domain": "login",
+                "timeout": 30
+            },
+            "org2": {
+                "user_name": "org2",
+                "user_password": "org2",
+                "user_token": "org2",
+                "domain": "test",
+                "timeout": 30
+            },
+            "org3": {
+                "user_name": "org3",
+                "user_password": "org3",
+                "user_token": "org3",
+                "domain": "test",
+                "timeout": 30
+            }
+        },
+        "org_template":{
+            "org_template1": {
+                "user_name": "org_template1",
+                "user_password": "org_template1",
+                "user_token": "org_template1",
+                "domain": "login",
+                "timeout": 30
+            }
+        }
+    },
+    "objects":  {
+        "test_objects": [
+            "Meter_Read__c",
+            "Contact",
+            "Marketing_Offer__c",
+            "AccountContactRelation",
+            "testinInvalidObject"
+        ],
+        "real_objects": {
+            "sf_plannbuild_objects_list": [
+                "Vlocity_cmt__Premises__c",
+                "POP__c",
+                "Plan_And_Build_Project__c",
+                "Wayleave__c",
+                "Aggregation_Zone__c",
+                "Block__c",
+                "Capital_Expenditure__c",
+                "MDU__c",
+                "Service_Damage__c",
+                "Fiberhood__c",
+                "Meter_Read__c",
+                "Network_Management_to_Capital_Project__c"
+            ],
+            "sf_networkinventory_objects_list": [
+                "Asset"
+            ],
+            "sf_leads_objects_list": [
+                "Account",
+                "Lead",
+                "Contact",
+                "Marketing_Offer__c",
+                "AccountContactRelation"
+            ],
+            "sf_customer_objects_list": [
+                "CaseHistory",
+                "CaseComment",
+                "Asset",
+                "Order",
+                "Vlocity_cmt__Premises__c",
+                "User",
+                "ServiceAppointment",
+                "ServiceTerritory",
+                "Account",
+                "AccountContactRelation",
+                "Contact",
+                "ServiceResource",
+                "AssignedResource",
+                "Case",
+                "WorkOrder",
+                "WorkType",
+                "EmailMessage",
+                "Entitlement",
+                "EntityMilestone",
+                "OperatingHours",
+                "ResourceAbsence",
+                "ServiceResourceCapacity",
+                "ServiceTerritoryMember",
+                "Shift",
+                "Skill",
+                "SkillRequirement",
+                "TimeSlot",
+                "Event",
+                "Task"
+            ],
+            "sf_unable_to_find_objects_list": [
+                "Calls",
+                "CaseRelatedIssue",
+                "ChangeRequest",
+                "ChangeRequestRelatedIssue",
+                "Chatter",
+                "Incident",
+                "Milestone",
+                "Post",
+                "Problem"
+            ],
+            "sf_product_objects_list": [
+                "Product2"
+            ]
+        }
+    },
+    "headers": {
+        "csv_field_properties_header": [
+            "date_synced_with_org",
+            "custom_id",
+            "org_name",
+            "object_api_name",
+            "object_label",
+            "field_api_name",
+            "field_label",
+            "field_ui_type",
+            "field_api_type",
+            "field_relationship_type",
+            "parent_object_api_name",
+            "field_is_required",
+            "field_is_restricted_picklist",
+            "field_is_unique",
+            "field_is_formula",
+            "default_value",
+            "default_value_formula",
+            "defaulted_on_create",
+            "length",
+            "precision",
+            "scale",
+            "validation_rules",
+            "dependant_fields"
+        ],
+        "csv_picklist_values_header": [
+            "date_synced_with_org",
+            "custom_id",
+            "org_name",
+            "object_api_name",
+            "object_label",
+            "field_api_name",
+            "field_label",
+            "field_ui_type",
+            "field_is_required",
+            "field_is_restricted_picklist",
+            "field_is_formula",
+            "active",
+            "default_value",
+            "default_value_formula",
+            "defaulted_on_create",
+            "valid_for",
+            "label",
+            "value",
+            "length",
+            "precision",
+            "scale",
+            "validation_rules",
+            "dependant_fields"
+        ],
+        "csv_record_type_IDs_header": [
+            "date_synced_with_org",
+            "custom_id",
+            "org_name",
+            "object_api_name",
+            "object_label",
+            "record_type_id",
+            "record_type_name"
+        ]
+    }             
+}

@@ -1,0 +1,2 @@
+pandas==2.0.1
+simple_salesforce==1.12.3
